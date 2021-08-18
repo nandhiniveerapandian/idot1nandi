@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>IDOT</title>
+<link rel="stylesheet" href="style.css">
+
+<style> 
+    body
+    {
+        background-color:purple;
+        width:100%;
+        height: 100%;
+    }
+    #main
+    {
+        background-color: white;
+        margin: auto;
+        padding: 10px 0px 10px 0px; 
+        border-radius: 35px 35px 35px 35px;
+        width: 1500px;
+        height: 600px;
+        margin-top: 70px;
+    }
+    #leftbox {
+        float:left; 
+        background-color: white;
+        width:60px;
+        height: 600px;
+        margin-left: 10px;
+    }
+    #main1
+    {
+        background-color: white;
+        width:1100px;
+        height:50px;
+        margin-left: 15px;
+    }
+    #middlebox{
+        float:left; 
+        background-color:	#dcdcdc;
+        padding: 10px 0px 10px 0px; 
+        border-radius: 15px 15px 0px 0px;
+        margin-top: 0px;
+        width: 1100px;
+        height: 540px;
+    }
+    #rightbox{
+        float:right;
+        margin-left: 0px;
+        background:white;
+        width:20%;
+        height:500px;
+        border-radius: 0px 25px 25px 0px;
+        margin-top: -40px;        
+
+    }
+  
+    .box1
+    {
+        margin-left: 20px;
+        margin-top: 30px;
+       border-radius: 15px 15px 15px 15px;
+      width:220px;
+      height:208px;
+      background:white;
+      transition:all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      position:absolute;
+    }
+    .box1:hover
+    {
+     transform: translate(30px,30px);
+      -webkit-transform: translate(30px,30px);
+    -o-transform: translate(30px,30px); 
+    -moz-transform: translate(30px,30px);
+     
+}
+    .box2
+    {
+     margin-top: 30px;
+       border-radius: 15px 15px 15px 15px;
+      width:220px;
+      height:208px;
+        margin-left: 300px;
+      background:white;
+      transition:all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      position:absolute;
+    }
+    .box2:hover
+    {
+     transform: translate(30px,30px);
+      -webkit-transform: translate(30px,30px);
+    -o-transform: translate(30px,30px); 
+    -moz-transform: translate(30px,30px);
+     
+}
+    .box3
+    {
+     margin-top: 30px;
+       border-radius: 15px 15px 15px 15px;
+      width:220px;
+      height:208px;
+        margin-left: 570px;
+      background:white;
+      transition:all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      position:absolute;
+    }
+    .box3:hover
+    {
+     transform: translate(30px,30px);
+      -webkit-transform: translate(30px,30px);
+    -o-transform: translate(30px,30px); 
+    -moz-transform: translate(30px,30px);
+     
+}
+    .box4
+    {
+     margin-top: 30px;
+       border-radius: 15px 15px 15px 15px;
+      width:220px;
+      height:208px;
+        margin-left: 850px;
+      background:white;
+      transition:all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      position:absolute;
+    }
+    .box4:hover
+    {
+     transform: translate(30px,30px);
+      -webkit-transform: translate(30px,30px);
+    -o-transform: translate(30px,30px); 
+    -moz-transform: translate(30px,30px);
+     
+}
+      .box5
+    {
+     
+       border-radius: 15px 15px 15px 15px;
+      width:220px;
+      height:208px;
+        margin-left: 20px;
+      background:white;
+      transition:all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      position:absolute;
+    }
+    .box5:hover
+    {
+     transform: translate(30px,30px);
+      -webkit-transform: translate(30px,30px);
+    -o-transform: translate(30px,30px); 
+    -moz-transform: translate(30px,30px);
+     
+}
+     .box6
+    {
+     
+       border-radius: 15px 15px 15px 15px;
+      width:220px;
+      height:208px;
+        margin-left: 300px;
+      background:white;
+      transition:all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      position:absolute;
+    }
+    .box6:hover
+    {
+     transform: translate(30px,30px);
+      -webkit-transform: translate(30px,30px);
+    -o-transform: translate(30px,30px); 
+    -moz-transform: translate(30px,30px);
+     
+}
+     .box7
+    {
+     
+       border-radius: 15px 15px 15px 15px;
+      width:220px;
+      height:208px;
+        margin-left: 570px;
+      background:white;
+      transition:all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      position:absolute;
+    }
+    
+     .box8
+    {
+     
+       border-radius: 15px 15px 15px 15px;
+      width:220px;
+      height:200px;
+      margin-left: 850px;
+      background:white;
+      transition:all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      position:absolute;
+    }
+    .box8:hover
+    {
+     transform: translate(30px,30px);
+      -webkit-transform: translate(30px,30px);
+    -o-transform: translate(30px,30px); 
+    -moz-transform: translate(30px,30px);
+     
+}
+   
+        
+    </style> 
+    </head> 
+      
+    <body> 
+        <div id = "boxes">
+            <div id="main">
+              
+            <div id = "leftbox">
+              <img src="images/symbol.png" width="50px; height:50px;"><br><br><br>
+                <a href="menu.html"><img src="images/menu.jpg"  style="margin-left: 10px;" width="30px; height:30px;"></a><br><br>
+                <a href="heart.html"><img src="images/heart.png"  style="margin-left: 10px;" width="30px; height:30px;"></a><br><br>
+                <a href="file.html"><img src="images/file.png"  style="margin-left: 15px;" width="20px; height:40px;"></a><br><br>
+                <a href="face.html"><img src="images/face.png"  style="margin-left: 10px;" width="30px; height:30px;"></a><br><br>
+                <a href="dollar.html"><img src="images/dollar.jpeg"  style="margin-left: 10px;" width="30px; height:30px;"></a><br><br>
+                <a href="signal.html"><img src="images/signal.png"  style="margin-left: 10px;" width="30px; height:30px;"></a><br><br><br><br><br><br><br><br>
+                <a href="box.html"><img src="images/box.jpg"  style="margin-left: 10px;" width="30px; height:30px;"></a><br><br>
+                <a href="delete.html"><img src="images/delete.png"  style="margin-left: 10px;" width="30px; height:30px;" ></a><br><br>
+                
+            </div> 
+                
+             <div id="main1">
+                 <a style="text-decoration: none;" href="project.html"><h  style="margin-left:30px;font-family: Noto Sans, sans-serif; font-size: 25px;color: black;"><b>&nbsp;&nbsp;&nbsp;Projects</b></h></a>
+                <a style="text-decoration: none;" href="index.html"><h style="font-family:  Noto Sans, sans-serif ; font-size: 23px; color:grey;">&nbsp;&nbsp;&nbsp;Templates</h></a>
+                 <a style="text-decoration: none;" href="project1.html"><input class="btn btn-default" type="submit" name="submit" value="Start a new project" style="color:white;background-color:#3cb371; margin-left: 600px; width:160px;border-radius: 20px; height:33px;"></a>
+                </div>
+            <div id = "middlebox">
+                <a href="menu1.html"><img src="images/menu1.jpg"  style="margin-left: 10px;" width="30px; height:30px;"></a>
+                <a href="menu2.html"><img src="images/menu2.png"  style="margin-left: 10px;" width="30px; height:30px;"></a>
+                
+                <select id="cars" style="background-color:transparent;margin-left: 500px; Border: none;" name="cars">
+                    
+                    <option value="All clients">All clients</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                <select id="cars" style="background-color:transparent;margin-left: 40px; Border: none;" name="cars">
+                    
+                    <option value="All clients">Inprogress</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                <select id="cars" style="background-color:transparent;margin-left: 40px; Border: none;" name="cars">
+                    
+                    <option value="All clients">Internal</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                <select id="cars" style="background-color:transparent;margin-left: 40px; Border: none;" name="cars">
+                    
+                    <option value="All clients">By Activity</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                
+                <div class="box1">
+                   <br><h style="margin-left: 15px; font-size: 25px;"><b>Video Compaign</b></h> 
+                    <br><br><h style="margin-left: 15px; font-size: 15px;">-Application Concept</h> 
+                    <br><br><h style="margin-left: 15px; font-size: 15px;">-Website Concept</h> 
+                    <br><br><img src="images/p1.jpg"  style="margin-left: 10px;" width="25px; height:30px;">
+                    <img src="images/p2.jpg"  style="margin-left: 7px;" width="25px; height:25px;"><br>
+                    <h style="color: grey;margin-left: 15px;font-size: 15px;">Active recently</h>
+                    <a href="cstar.html"><img src="images/cstar.jpg"  style="margin-left: 20px;" width="30px; height:30px;"></a>
+                    <a href="dot3.html"><img src="images/dot3.jpg"  style="margin-left: 5px;" width="30px; height:30px;"></a>
+                </div>
+                
+                <div class="box2">
+                    <br><h style="margin-left: 15px; font-size: 25px;"><b>NPS</b></h> 
+                    <br><br><h style="margin-left: 15px; font-size: 15px;">-Statistics and Overview</h>
+                    <br><br><h style="margin-left: 15px; font-size: 15px;color:red;">nps@gmail.com</h>
+                    <br><br><img src="images/p2.jpg"  style="margin-left: 10px;" width="25px; height:30px;">
+                    <img src="images/p3.jpg"  style="margin-left: 7px;" width="25px; height:25px;"><br>
+                    <h style="color: grey;margin-left: 15px;font-size: 15px;">1 day ago</h>
+                    <a href="cstar.html"><img src="images/cstar.jpg"  style="margin-left: 20px;" width="30px; height:30px;"></a>
+                    <a href="dot3.html"><img src="images/dot3.jpg"  style="margin-left: 5px;" width="30px; height:30px;"></a>
+                </div>
+                <div class="box3">
+                    <br><h style="margin-left: 15px; font-size: 25px;"><b>Internal</b></h> 
+                    <br><br><img src="images/p7.jpg"  style="margin-left: 10px;" width="100px; height:100px;"><br>
+                    <br><img src="images/p4.jpg"  style="margin-left: 10px;" width="25px; height:30px;">
+                    <img src="images/p5.jpg"  style="margin-left: 7px;" width="25px; height:25px;">
+                    <img src="images/p2.jpg"  style="margin-left: 7px;" width="25px; height:25px;"><br>
+                    <h style="color: grey;margin-left: 15px;font-size: 15px;">1 day ago</h>
+                    <a href="cstar.html"><img src="images/cstar.jpg"  style="margin-left: 20px;" width="30px; height:30px;"></a>
+                    <a href="dot3.html"><img src="images/dot3.jpg"  style="margin-left: 5px;" width="30px; height:30px;"></a>
+                </div>
+                <div class="box4">
+                    <br><h style="margin-left: 15px; font-size: 25px;"><b>Growth Hacking</b></h> 
+                    <br><br><h style="margin-left: 15px; font-size: 15px;">Ideas,challenges and tests</h>
+                     <br><br><br><br><img src="images/p1.jpg"  style="margin-left: 10px;" width="25px; height:30px;">
+                    <img src="images/p2.jpg"  style="margin-left: 7px;" width="25px; height:25px;"><br>
+                    <h style="color: grey;margin-left: 15px;font-size: 15px;">2 days ago</h>
+                    <a href="cstar.html"><img src="images/cstar.jpg"  style="margin-left: 20px;" width="30px; height:30px;"></a>
+                    <a href="dot3.html"><img src="images/dot3.jpg"  style="margin-left: 5px;" width="30px; height:30px;"></a>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="box5">
+                <br><h style="margin-left: 15px; font-size: 20px;"><b>Product Marketing</b></h> 
+                    <br><br><h style="margin-left: 15px; font-size: 15px;">All things marketing</h>
+                     <br><br><br><br><img src="images/p4.jpg"  style="margin-left: 10px;" width="25px; height:30px;">
+                    <img src="images/p6.jpg"  style="margin-left: 7px;" width="25px; height:25px;"><br>
+                    <h style="color: grey;margin-left: 15px;font-size: 15px;">1 week ago</h>
+                    <a href="ustar.html"><img src="images/ustar.jpg"  style="margin-left: 20px;" width="30px; height:30px;"></a>
+                    <a href="dot3.html"><img src="images/dot3.jpg"  style="margin-left: 5px;" width="30px; height:30px;"></a>
+                </div>
+                <div class="box6">
+                <br><h style="margin-left: 15px; font-size: 20px;"><b>Mobile App Design</b></h>
+                    <br><br><h style="margin-left: 15px; font-size: 15px;">Prototypes,mochups,clients and collaboration</h>
+                     <br><br><br><img src="images/p4.jpg"  style="margin-left: 10px;" width="25px; height:30px;">
+                    <img src="images/p6.jpg"  style="margin-left: 7px;" width="25px; height:25px;"><br>
+                    <h style="color: grey;margin-left: 15px;font-size: 15px;">1 week ago</h>
+                    <a href="ustar.html"><img src="images/ustar.jpg"  style="margin-left: 20px;" width="30px; height:30px;"></a>
+                    <a href="dot3.html"><img src="images/dot3.jpg"  style="margin-left: 5px;" width="30px; height:30px;"></a>
+                </div>
+                <div class="box7">
+                <img src="images/p8.jpg" style="width:220px;height:200px; border-radius: 15px 15px 15px 15px;">
+                </div>
+                <div class="box8">
+                <img src="images/people.jpg" style="width:220px;height:208px; border-radius: 15px 15px 15px 15px;">
+                </div>     
+            </div>
+              
+            <div id = "rightbox">
+                <a href="search.html"><img src="images/search.png"  style="margin-left:90px; width:20px; height:20px;"></a>
+                <a href="search.html"><img src="images/headset.png"  style="margin-left:20px; width:20px; height:20px;"></a>
+                 <a href="search.html"><img src="images/bell.png"  style="margin-left:20px; width:20px; height:20px;"></a>
+                <br><h style="font-family: arial;font-size: 20px;margin-left: 1px;">Hello,Sullivan</h>
+                <img src="images/p9.jpg"  style="margin-left: 10px;margin-top: 10px;" width="50px; height:70px;">
+                <a href="dot1.html"><img src="images/dot1.png" style="margin-left: 10px;width: 30px;height: 30px;"></a>
+                <br><br><hr><br>
+                <h style="color: grey;margin-left: 15px;font-size: 15px;">Total Projects<br><h style="border-left: 3px solid purple ;height: 20px;margin-left: 15px;"><h style="color:black;font-size: 20px;"> 189</h></h><h style="color: grey;margin-left: 120px;font-size:15px;">Completed</h><br><h style="border-left: 3px solid green ;margin-left: 120px; height: 20px;margin-left: 170px;"><h style="color:black;font-size: 20px;"> 174</h></h></h><br><br>
+                <h style="color: grey;margin-left: 15px;font-size: 15px;">In progress<br><h style="border-left: 3px solid orange ;height: 20px;margin-left: 15px;"><h style="color:black;font-size: 20px;"> 13</h></h><h style="color: grey;margin-left: 120px;font-size:15px;">Out of schedule</h><br><h style="border-left: 3px solid red ;margin-left: 120px; height: 20px;margin-left: 170px;"><h style="color:black;font-size: 20px;"> 2</h></h></h><br><br><hr><br>
+                <h style="font-size: 15px;">Activity</h><br>
+                <h style="font-size: 17px;"><b>Feed</b></h><br><br>
+                <img src="images/p10.jpg"  style="margin-left:0px; width:25px; height:25px;">
+                <div class="chat" style="float:right; margin-right:40px;width: 220px;border-radius: 15px 15px 15px 15px;  background-color:	#dcdcdc; height: 40px;"><h style="margin-left: 5px; font-size: 10px;"><b>Completed task</b> Prepare moodboard for website branding.</h>
+                </div><br><br>
+                <div class="chat1" style="float:right; margin-right:5px;width: 100px;border-radius: 15px 15px 0px 15px;  background-color:orange; height: 25px;"><h style="margin-left: 5px; font-size: 10px;">Coffe break</h>
+                </div><br><br>
+                <img src="images/p10.jpg"  style="float: left; margin-left:0px; width:25px; height:25px;">
+                <div class="chat" style="float:right; margin-right:40px;width: 220px;border-radius: 15px 15px 15px 15px;  background-color:	#dcdcdc; height: 40px;"><h style="margin-left: 5px; font-size: 10px;"><b>Overdued task</b> Search references for multicolored background.</h>
+                    </div><br><br><br>
+                <div class="chat" style="width: 270px;border-radius: 15px 15px 15px 15px;  background-color:white;border: 2px solid grey; height: 27px;"><h style="margin-left: 13px; font-size: 17px;color: grey;">Message</h><a href="p11.html"><img src="images/p11.jpg"  style="float: right; margin-right:10px; margin-top: 3px; width:20px; height:20px;border-radius: 15px 15px 15px 15px;"></a>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
+    
+      
+    
